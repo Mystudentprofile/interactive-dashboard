@@ -21,6 +21,7 @@
     <script>document.write("This dashboard demonstrates how JavaScript can be used to create interactive websites.");</script>
     <noscript>Unfortunately, your web browser does not support JavaScript.</noscript>
 
+    <!-- Weekly Task Goal -->
     <div class="container">
         <div class="row">
             <div class="col" id="weekly-tasks">
@@ -42,6 +43,36 @@
                 </form>
                 <p id="goal-message"></p>
             </div>
+        </div>
+
+        <!-- Metric Converter -->
+        <div class="col" id="metric-converter">
+            <script src="js/metric-converter.js" defer></script>
+            <form id="converter-form">
+                <div class="convertValue">
+                    <label for="convertValue">Enter a value:</label>
+                    <input type="number" id="convertValue" name="convertValue" step="any" required>
+                </div>
+                <div class="conversionType">
+                    <label for="conversionType">Choose a conversion:</label>
+                    <select id="conversionType" name="conversionType">
+                        <optgroup label="Imperial to Metric">
+                            <option value="inch to centimeter">Inches to centimeters</option>
+                            <option value="foot to centimeter">Feet to centimeters</option>
+                            <option value="yard to meter">Yards to meters</option>
+                            <option value="mile to kilometer">Miles to kilometers</option>
+                        </optgroup>
+                        <optgroup label="Metric to Imperial">
+                            <option value="centimeter to inch">Centimeters to inches</option>
+                            <option value="centimeter to foot">Centimeters to feet</option>
+                            <option value="meter to yard">Meters to yards</option>
+                            <option value="kilometer to mile">Kilometers to miles</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <button type="submit" id="convert-btn">Convert</button>
+            </form>
+            <p id="convert-result"></p>
         </div>
     </div>
 </body>
