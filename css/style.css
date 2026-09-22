@@ -5,11 +5,24 @@ body {
     margin: auto;
 }
 
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+}
+
 form label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.25rem;
-    padding-top: 1rem;
 }
 
 form input,
@@ -32,4 +45,12 @@ form button {
 
 form button:hover {
     background-color: #244a6e;
+}
+
+/* Output */
+#goal-message,
+#convert-result {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #2f5d8a;
 }
