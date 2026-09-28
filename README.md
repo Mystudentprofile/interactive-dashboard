@@ -1,8 +1,8 @@
 # Interactive Productivity Dashboard
 This project is a web-based dashboard built for WEB-115 to demonstrate interactive JavaScript features.
 ## TODO: Future Enhancements
-- [ ] Add a metric conversion tool.
-- [ ] Integrate a task list with array storage.
+- [X] Add a metric conversion tool.
+- [X] Integrate a task list with array storage.
 - [ ] Add JavaScript logic for a live clock.
 - [X] Add Add a weekly task goal calculator.
 ## Weekly Task Goals
@@ -54,3 +54,5 @@ BEGIN
         END IF
     END IF
 END
+## Magic Eight Ball
+This feature allows a user to input a question and the magic eight ball will return a random answer.
