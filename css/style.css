@@ -1,24 +1,48 @@
 body {
     background-color: #a2c1f0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 5rem;
+    padding: 3rem 1rem;
     margin: auto;
+    text-align: center;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
     padding-top: 2rem;
 }
 
-form {
+.col {
+    min-width: 280px;
+}
+
+/* Cards */
+#weekly-tasks,
+#metric-converter,
+.row #magic-eight-ball {
+    flex: 1;
+    max-width: none;
+    margin: 0;
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding-top: 1rem;
 }
 
+.row {
+    display: flex;
+    align-items: stretch;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+/* Card titles */
+.heading {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dfe5ec;
+    font-size: 1.3rem;
+}
+
+/* Forms */
 form label {
     display: block;
     font-weight: bold;
@@ -28,6 +52,7 @@ form label {
 form input,
 form select {
     width: 100%;
+    box-sizing: border-box;
     padding: 0.4rem;
     margin-bottom: 1rem;
     border: 1px solid #b8c2cc;
@@ -51,6 +76,31 @@ form button:hover {
 #goal-message,
 #convert-result {
     margin-top: 1rem;
+    padding: 0.75rem;
+    border-left: 3px solid #2f5d8a;
+    background-color: #eef3f9;
     font-weight: bold;
     color: #2f5d8a;
+}
+
+/* Magic Eight Ball */
+#circle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+
+#magicEightBall {
+    position: relative;
+    width: 300px;
+    margin: 1.25rem auto;
+}
+
+#ball {
+    display: block;
+    width: 290px;
 }

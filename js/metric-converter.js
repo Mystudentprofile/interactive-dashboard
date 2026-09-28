@@ -18,28 +18,28 @@ document.getElementById("convert-btn").addEventListener("click", function (event
         let factor;
         let unit;
 
-        if (conversionType === "inch to centimeter") {
+        if (conversionType === "inch-to-centimeter") {
             factor = 2.54;
             unit = "centimeters";
-        } else if (conversionType === "foot to centimeter") {
+        } else if (conversionType === "foot-to-centimeter") {
             factor = 30.48;
             unit = "centimeters";
-        } else if (conversionType === "yard to meter") {
+        } else if (conversionType === "yard-to-meter") {
             factor = 0.91;
             unit = "meters";
-        } else if (conversionType === "mile to kilometer") {
+        } else if (conversionType === "mile-to-kilometer") {
             factor = 1.61;
             unit = "kilometers";
-        } else if (conversionType === "centimeter to inch") {
+        } else if (conversionType === "centimeter-to-inch") {
             factor = 0.39;
             unit = "inches";
-        } else if (conversionType === "centimeter to foot") {
+        } else if (conversionType === "centimeter-to-foot") {
             factor = 0.0328;
             unit = "feet";
-        } else if (conversionType === "meter to yard") {
+        } else if (conversionType === "meter-to-yard") {
             factor = 1.09;
             unit = "yards";
-        } else if (conversionType === "kilometer to mile") {
+        } else if (conversionType === "kilometer-to-mile") {
             factor = 0.62;
             unit = "miles";
         } else {
