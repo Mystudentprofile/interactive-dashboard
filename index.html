@@ -27,6 +27,7 @@
             <!-- Weekly Task Goal -->
             <div class="col" id="weekly-tasks">
                 <script src="js/task-manager.js" defer></script>
+                <h3 class="heading">Weekly Task Goal</h3>
                 <form id="goal-form">
                     <div class="userName">
                         <label for="userName">Name:</label>
@@ -43,11 +44,23 @@
                     <button type="submit" id="goal-btn">Submit</button>
                     <p id="goal-message"></p>
                 </form>
+
+                <!-- Weekly Task List -->
+                <div id="task-list">
+                    <h3 class="heading">Weekly Task List</h3>
+                    <p>Enter a task below to manage your goals.</p>
+                    <form id="task-form">
+                        <label for="task-name">Enter task:</label>
+                        <input type="text" id="task-name" name="task-name" autocomplete="off">
+                        <button type="button" id="add-task">Add Task</button>
+                    </form>
+                </div>
             </div>
 
             <!-- Metric Converter -->
             <div class="col" id="metric-converter">
                 <script src="js/metric-converter.js" defer></script>
+                <h3 class="heading">Metric Converter</h3>
                 <form id="converter-form">
                     <div class="convertValue">
                         <label for="convertValue">Enter a value:</label>
@@ -80,7 +93,7 @@
             <div class="col" id="magic-eight-ball">
                 <script src="js/magic-eight-ball.js" defer></script>
                 <link rel="stylesheet" href="css/magic-eight-ball.css">
-                <h2 class="heading">Magic Eight Ball</h2>
+                <h3 class="heading">Magic Eight Ball</h3>
                 <form id="eight-ball-form">
                     <p>Type a yes/no question below, then click on the Eight Ball below to get your answer!</p>
                     <input id="question" name="question" size="80">
@@ -89,6 +102,9 @@
                         <img id="ball" src="img/magic-eight-ball.png" alt="Magic Eight Ball">
                     </div>
                     <button id="reset" name="reset" type="reset">Ask another question</button>
+<input id="new-answer" name="new-answer" size="40" placeholder="Add a new answer">
+<button id="add-btn" type="button">Add answer</button>
+                    <p id="answer"></p>
                 </form>
                 <br>
             </div>

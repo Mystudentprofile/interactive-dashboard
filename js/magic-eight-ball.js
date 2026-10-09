@@ -16,7 +16,7 @@ let answers = [
 function displayAnswer() {
     let randomIndex = Math.floor(Math.random() * answers.length);
 
-    // Put the chosen answer in the circle and make the circle visible
+// Put the chosen answer in the circle and make the circle visible
     document.getElementById("circle").innerHTML = answers[randomIndex];
     document.getElementById("circle").style.display = "flex";
 }
@@ -25,7 +25,7 @@ function displayAnswer() {
 document.getElementById("ball").addEventListener("mousedown", function () {
     let question = document.getElementById("question").value;
 
-    // Check that the user actually typed a question first
+// Check that the user actually typed a question first
     if (question === "") {
         alert("Please enter a question before clicking the Eight Ball.");
     } else {
