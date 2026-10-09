@@ -55,4 +55,4 @@ BEGIN
     END IF
 END
 ## Magic Eight Ball
-This feature allows a user to input a question and the magic eight ball will return a random answer.
+This feature allows a user to input a question and the magic eight ball will return a random answer. This also allows users to add an answer.
