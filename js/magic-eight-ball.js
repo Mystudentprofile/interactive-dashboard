@@ -37,3 +37,19 @@ document.getElementById("ball").addEventListener("mousedown", function () {
 document.getElementById("reset").addEventListener("click", function () {
     document.getElementById("circle").style.display = "none";
 });
+
+// Lets the user add a new answer to the array
+document.getElementById("add-btn").addEventListener("click", function () {
+    let newAnswer = document.getElementById("new-answer").value;
+
+    if (newAnswer !== "") {
+        answers.push(newAnswer); // push() adds an item to the end of an array
+        console.log("Added: " + newAnswer + " — total answers: " + answers.length);
+
+        // Show a confirmation message on the page
+        document.getElementById("answer").innerHTML =
+            "Added: " + newAnswer + " (" + answers.length + " total answers)";
+
+        document.getElementById("new-answer").value = ""; // clear the field
+    }
+});

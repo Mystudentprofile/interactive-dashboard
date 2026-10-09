@@ -34,6 +34,17 @@ body {
     margin: 0;
 }
 
+#task-list {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dfe5ec;
+}
+
+#user-tasks {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
 /* Card titles */
 .heading {
     margin-top: 0;
@@ -74,13 +85,20 @@ form button:hover {
 
 /* Output */
 #goal-message,
-#convert-result {
+#convert-result, 
+#answer, 
+#user-tasks{
     margin-top: 1rem;
     padding: 0.75rem;
     border-left: 3px solid #2f5d8a;
     background-color: #eef3f9;
     font-weight: bold;
     color: #2f5d8a;
+}
+
+#user-tasks {
+    list-style-position: inside;
+    padding-left: 1.5rem;
 }
 
 /* Magic Eight Ball */
@@ -103,4 +121,8 @@ form button:hover {
 #ball {
     display: block;
     width: 290px;
+}
+
+#new-answer {
+    margin-top: 1.5rem;
 }

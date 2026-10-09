@@ -6,7 +6,7 @@ This project is a web-based dashboard built for WEB-115 to demonstrate interacti
 - [ ] Add JavaScript logic for a live clock.
 - [X] Add Add a weekly task goal calculator.
 ## Weekly Task Goals
-This feature calculates a user's task targets and weekly goals and bonus tasks.
+This feature calculates a user's task targets and weekly goals and bonus tasks. Users can also add tasks.
 ## Imperial Metric Converter
 This feature allows a user to convert metric to imperial units and vice versa, ie inch to centimeter, foot to centimeter, yard to meter, mile to kilometer, and vice versa.
 ## Logic and Pseudocode
