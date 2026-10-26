@@ -52,10 +52,23 @@
                     <form id="task-form">
                         <label for="task-name">Enter task:</label>
                         <input type="text" id="task-name" name="task-name" autocomplete="off">
-                        <button type="button" id="add-task">Add Task</button>
+
+                        <label for="task-priority">Priority:</label>
+                        <select id="task-priority" name="task-priority">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+
+                        <label for="task-important" class="checkbox-label">
+                            <input type="checkbox" id="task-important" name="task-important">
+                            Mark as important
+                        </label>
+
+                        <button type="submit" id="add-task">Add Task</button>
+                        <button type="button" id="delete-list">Delete List</button>
                     </form>
                 </div>
-                
             </div>
 
             <!-- Metric Converter -->
@@ -67,7 +80,7 @@
                         <label for="convertValue">Enter a value:</label>
                         <input type="number" id="convertValue" name="convertValue" step="any" required>
                     </div>
-                    
+
                     <div class="conversionType">
                         <label for="conversionType">Choose a conversion:</label>
                         <select id="conversionType" name="conversionType">
@@ -104,7 +117,7 @@
                     </div>
                     <button id="reset" name="reset" type="reset">Ask another question</button>
                     <input id="new-answer" name="new-answer" size="40" placeholder="Add a new answer">
-<button id="add-btn" type="button">Add answer</button>
+                    <button id="add-btn" type="button">Add answer</button>
                     <p id="answer"></p>
                 </form>
                 <br>
