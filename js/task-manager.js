@@ -88,6 +88,7 @@ function displayTask(task) {
     let doneButton = document.createElement("button");
     doneButton.appendChild(document.createTextNode("Mark Complete"));
     doneButton.type = "button";
+    doneButton.style.marginLeft = "0.75rem";
     doneButton.addEventListener("click", function () {
         markComplete(task.id);
     });

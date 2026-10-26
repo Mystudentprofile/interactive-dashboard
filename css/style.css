@@ -90,7 +90,6 @@ form button:hover {
 #user-tasks{
     margin-top: 1rem;
     padding: 0.75rem;
-    border-left: 3px solid #2f5d8a;
     background-color: #eef3f9;
     font-weight: bold;
     color: #2f5d8a;
@@ -127,3 +126,32 @@ form button:hover {
     margin-top: 1.5rem;
 }
 
+/* Weekly Task List */
+#task-important {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 0.4rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    text-transform: none;
+    margin-bottom: 1rem;
+}
+
+#user-tasks {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+#delete-list {
+    background-color: #8a3030;
+    margin-left: 0.5rem;
+}
+
+#delete-list:hover {
+    background-color: #6e2424;
+}
