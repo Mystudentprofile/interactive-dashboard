@@ -23,6 +23,11 @@ function digitalClock() {
         hours = hours - 12;
     }
 
+    // Midnight should display as 12
+    if (hours === 0) {
+        hours = 12;
+    }
+    
     // Add a leading zero to any value below 10
     if (hours < 10) {
         hours = "0" + hours;
