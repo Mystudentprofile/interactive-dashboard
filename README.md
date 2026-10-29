@@ -3,7 +3,7 @@ This project is a web-based dashboard built for WEB-115 to demonstrate interacti
 ## TODO: Future Enhancements
 - [X] Add a metric conversion tool.
 - [X] Integrate a task list with array storage.
-- [ ] Add JavaScript logic for a live clock.
+- [X] Add JavaScript logic for a live clock.
 - [X] Add Add a weekly task goal calculator.
 ## Weekly Task Goals
 This feature calculates a user's task targets and weekly goals and bonus tasks. Users can also add tasks.
@@ -56,3 +56,5 @@ BEGIN
 END
 ## Magic Eight Ball
 This feature allows a user to input a question and the magic eight ball will return a random answer. This also allows users to add an answer.
+## Live Digital Clock and Date
+This feature allows a user to see the exact time and date.
