@@ -17,6 +17,7 @@ body {
 /* Cards */
 #weekly-tasks,
 #metric-converter,
+#digital-clock, #clock-face, #calendar-date,
 .row #magic-eight-ball {
     flex: 1;
     max-width: none;
